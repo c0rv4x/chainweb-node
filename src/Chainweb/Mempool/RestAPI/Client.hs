@@ -63,6 +63,7 @@ toMempool version chain txcfg env =
     , mempoolCheckBadList = const unsupported
     , mempoolGetBlock = \_ _ _ _ -> unsupported
     , mempoolGetPendingTransactions = getPending
+    , mempoolGetNewTransactions = unsupported
     , mempoolPrune = unsupported
     , mempoolClear = clear
     }
